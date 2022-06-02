@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+/* grids */
+
+body {
+
+    background-image: linear-gradient(to bottom, white, grey);
+    font-family: 'Poppins', sans-serif;
+}
+
+.grilla {
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+        "header"
+        "main"
+        "imagenFooter"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+header {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+.divHeader {
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li {
+    width: 33px;
+    height: 10px;
+    margin: 3px;
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 0%;
+    margin-right: 20%;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.tituloPrincipal {
+    font-size: 400%;
+    text-align: center;
+    padding-top: 20%;
+
+}
+
+.icono {
+    border-radius:50%;
+    margin-top: 1%;
+    margin-left: 30%;
+    margin-bottom: 10%;
+    max-width: 70%;
+    max-height: 70%;
+}
+
+main {
+    
+    grid-area: main;
+    max-width: 80%;
+    margin-top: 0%;
+}
+
+.imgMain{  grid-area: imagMain;
+    margin-top: 0px;
+    width: 80%;
+    height: 80%;
+    margin-left: 22%;
+    border: 5px solid black;
+    
+
+}
+
+
+.imagenFooter {
+    grid-area: imagenFooter;
+}
+
+footer {
+    grid-area: footer;
+    font-size: 100%;
+    text-align: center;
+}
+
+.imagenFooter {
+    max-width: 100%;
+}
+
+.imgF {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.imagen {
+    border-radius: 50%;
+    margin-top: 0%;
+    margin-left: 40%;
+    margin-bottom: 0%;
+    max-width: 5cm;
+    max-height: 5cm;
+    display: flex;
+}
+
+p {
+    color: rgb(192, 9, 9);
+    padding: 40px;
+    margin-right: 20px;
+    margin-left: 15px;
+    margin-top: 30px;
+    border: 5px double rgb(112, 111, 111);
+
+    font-size: larger;
+    text-align: center;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+/* seccion contactos*/
+
+.mainContacto{
+    margin-bottom: 5%;
+}
+.contacto{
+    font-size: large;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.mapa{ max-width: 100%;}
+.mapa{
+    margin-top: 5%;
+    justify-content:center;
+    width: 15%;
+    height: 50%;
+    margin-left: 83%;
+    border-color: black 3px;
+}
+/* seccion horarios*/
+
+.mainHs{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    
+
+}
+.footerHs{
+font-size: larger;
+    margin-top: 25%;
+    text-align: center;
+font-family: monospace;}
+
+
+/* seccion nosotros */
+
+main{
+    width: 100wv;
+    height: 100hv;
+    margin-top: auto;
+}
+.mainNosotros{
+    max-width: 100%;
+  margin-top: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footerNosotros{ font-size: larger;
+    margin-top: 25%;
+    text-align: center;
+font-family: monospace;
+
+}
+
+@media screen and (max-width:700px) {
+    .galeria {
+        flex-direction: column;
+    }
+.menu{
+    flex-direction: column-reverse;
+    font-size: small;
+}
+
+}
+
+@media screen and (max-width:400px) {
+    header {
+        flex-direction: column;
+    }
+
+    .divParrafo {
+        flex-direction: column;
+    }
+
+    .parrafos {
+        font-size: 50%;
+    }
+    .imagen{
+        flex-direction: column;
+    }
+    p{
+    font-size: xx-small;
+    }
+  }
