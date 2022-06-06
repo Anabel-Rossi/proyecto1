@@ -147,7 +147,7 @@ p {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    margin-top: 10%;
+    margin-top: 0%;
     margin-bottom: 2%;
     margin-left: 20%;
 }
@@ -189,9 +189,9 @@ p {
 
 .imagenAct {
     border-radius: 50%;
-    margin-top: 0%;
-    margin-left: 20%;
-    margin-bottom: 10%;
+    margin-top: 7%;
+    margin-left:-70%;
+    margin-bottom: 0%;
     max-width: 5cm;
     max-height: 5cm;
     border: 3px solid black;
