@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../estilos/estilos.css">
     <title>ATTITUDE SPORT</title>
 </head>
@@ -58,7 +59,8 @@
         <input type="button" value="Sin acciones" /> <br>
 
     </form>
-    <h2 class="contacto">
+    <h2 class="contacto"  data-aos="fade-up"
+    data-aos-duration="3000">
         PUNTO DE ENCUENTRO
         </h1>
         <iframe class="mapa"
@@ -71,7 +73,10 @@
             </h2>
         </footer>
 
-
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>
