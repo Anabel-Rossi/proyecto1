@@ -29,7 +29,7 @@ header {
 
 header {
     display: flex;
-    padding-top: 50px;
+    padding-top: 20px;
     justify-content: space-between;
 }
 
@@ -63,19 +63,27 @@ a {
 }
 
 .tituloPrincipal {
-    font-size: 400%;
+    font-size: 550%;
     text-align: center;
-    padding-top: 20%;
+    padding-top: 0%;
 
 }
 
 .icono {
     border-radius: 50%;
-    margin-top: 1%;
-    margin-left: 30%;
-    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-bottom: 0%;
     max-width: 70%;
     max-height: 70%;
+}
+
+.parrafoIndex {
+    color: rgba(51, 2, 2, 0.603);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 210%;
+    border: 0ch;
+    text-align: start;
 }
 
 main {
@@ -190,7 +198,7 @@ p {
 .imagenAct {
     border-radius: 50%;
     margin-top: 7%;
-    margin-left:-70%;
+    margin-left: 550%;
     margin-bottom: 0%;
     max-width: 5cm;
     max-height: 5cm;
@@ -210,16 +218,21 @@ p {
 
 .mainContacto {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 2fr 1fr;
     grid-gap: 3px;
     margin-bottom: 2%;
+    margin-left: 3%;
 }
 
 .contacto {
-    font-size: 200%;
+    font-size: 250%;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+}
+
+.contactoTel {
+    font-size: 150%;
 }
 
 .mapa {
@@ -234,6 +247,15 @@ p {
     margin-left: 40%;
     margin-bottom: 10%;
     border-color: black 3px;
+}
+
+.iconoContactos {
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 0%;
+    max-width: 50%;
+    max-height: 50%;
 }
 
 /* seccion horarios*/
@@ -268,6 +290,7 @@ h1 {
 
 
 /* seccion nosotros */
+
 .mainNosotros {
     display: grid;
     grid-template-rows: 1fr 1fr;
