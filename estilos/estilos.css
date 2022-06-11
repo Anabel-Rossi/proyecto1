@@ -113,6 +113,7 @@ footer {
     grid-area: footer;
     font-size: 100%;
     text-align: center;
+    margin-bottom: 0%;
 }
 
 .imagenFooter {
@@ -151,68 +152,14 @@ p {
 
 /* seccion actividades */
 
-.mainActividades {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 0%;
-    margin-bottom: 2%;
-    margin-left: 20%;
-}
-
-.foto {
-    max-width: 200px;
-    margin-top: 5%;
-    margin-left: 45%;
-    border: 5px solid black;
-}
-
-.foto2 {
-    max-width: 250px;
-    margin-top: 5%;
-    margin-bottom: -45%;
-    border: 5px solid black;
-}
-
-.foto3 {
-    max-width: 250px;
-    margin-top: 5%;
-    margin-left: 45%;
-    border: 5px solid black;
-}
-
-.foto4 {
-    max-width: 250px;
-    margin-top: 5%;
-    margin-left: 45%;
-    border: 5px solid black;
-}
-
-.foto5 {
-    max-width: 250px;
-    margin-top: 5%;
-    margin-left: 45%;
-    border: 5px solid black;
-}
-
-.imagenAct {
-    border-radius: 50%;
-    margin-top: 7%;
-    margin-left: 550%;
-    margin-bottom: 0%;
-    max-width: 5cm;
-    max-height: 5cm;
-    border: 3px solid black;
-}
-
 .footerAct {
-    margin-top: 10%;
-    grid-area: footer;
+    margin-top: 5%;
+    margin-bottom: 0%;
+
     font-size: 150%;
     font-family: fantasy;
 
 }
-
 
 /* seccion contactos*/
 
@@ -331,6 +278,24 @@ h1 {
     text-align: center;
     font-family: monospace;
 
+}
+
+/* Pseudoclases */
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: antiquewhite;
+}
+
+a:active {
+    color: blueviolet;
+}
+
+a:hover {
+    background: blue
 }
 
 @media screen and (max-width:700px) {
