@@ -1,59 +1,111 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
+@charset "UTF-8";
 @import "variables";
 @import "generales";
 @import "titulo";
 @import "icono";
 @import "parrafoIndex";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-
-
-
 /* seccion actividades */
-
-.footerAct {
-    margin-top: 5%;
-    margin-bottom: 0%;
-
-    font-size: 150%;
-    font-family: fantasy;
-
+.productos {
+    display: flex;
+    flex-direction: column;
 }
+
+.cont__prod {
+    color: white;
+    justify-items: center;
+    width: 70%;
+    margin: 5% auto;
+    border: 5px solid #fad100;
+    padding-top: 5%;
+    font-size: 140%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 5px 25px #868653;
+}
+
+.img__prod {
+    width: 85%;
+    height: auto;
+    padding-bottom: 5%;
+}
+
+.name__prod {
+    font-size: 70%;
+    letter-spacing: 5%;
+}
+
+.precios {
+    font-size: 70%;
+}
+
+.productos {
+    grid-area: productos;
+}
+
+.section__productos {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "banner""nav""titulo""productos""bannerfooter""footer";
+}
+
 
 /* seccion contactos*/
 
-.mainContacto {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 3px;
-    margin-bottom: 2%;
-    margin-left: 3%;
+nav ul {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.contacto {
-    font-size: 250%;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    color: $font;
-    font-weight: bold;
-}
-
-.contactoTel {
+nav ul li {
     font-size: 150%;
-    color: black;
-    font-weight: bold;
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 0%;
+    margin-right: 5%;
 }
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    color: #fad100;
+    text-shadow: 5px;
+}
+
+.tit__form {
+    font-size: 200%;
+    letter-spacing: 8px;
+}
+
+.sec__form {
+    padding: 5%;
+    text-align: center;
+    color: white;
+    grid-area: form;
+}
+
+.label__cont {
+    font-size: 100%;
+}
+
+.section__contacto {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "iconoContactos""nav""titulo""form""mapa""bannerfooter""footer";
+}
+
+
 
 .mapa {
     max-width: 100%;
-}
-
-.mapa {
     margin-top: 5%;
     justify-content: center;
     width: 20%;
@@ -65,11 +117,12 @@
 
 .iconoContactos {
     border-radius: 50%;
-    margin-top: 5%;
-    margin-left: 10%;
+    margin-top: 3%;
+    margin-left: 40%;
     margin-bottom: 0%;
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 10%;
+    max-height: 10%;
+
 }
 
 form {
@@ -87,89 +140,104 @@ form h3 {
 
 /* seccion horarios*/
 
-.mainHs {
+.art__r {
+    color: white;
+    letter-spacing: 1px;
+    display: flex;
+    max-width: 90%;
+    margin: 5px auto;
+    flex-direction: column;
+    border: 5px solid #fad100;
+    align-items: center;
+    font-size: 80%;
+}
+
+.img__r {
+    max-width: 100%;
+    height: auto;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.tit__art {
+    font-size: 200%;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+}
+
+.li__r {
+    font-size: 100%;
+}
+
+.p__rec {
+    text-align: center;
+    margin: 5px;
+}
+
+.rec1 {
+    grid-area: rec1;
+}
+
+.rec2 {
+    grid-area: rec2;
+}
+
+.section__horarios {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-gap: 5px;
-    font-family: 'Poppins', sans-serif;
-    font-size: x-large;
-    text-align: center;
-
+    gap: 30px;
+    grid-template-areas: "banner""nav""titulo""rec1""rec2""bannerfooter""footer";
 }
-
-h1,
-h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-}
-
-.imgHs {
-    max-width: 400px;
-    border-radius: 50%;
-    margin-left: 38%;
-    border: 5px solid black;
-}
-
-.footerHs {
-    font-size: larger;
-    margin-top: 25%;
-    text-align: center;
-    font-family: monospace;
-}
-
 
 /* seccion nosotros */
 
-.mainNosotros {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    font-family: 'Poppins', sans-serif;
-    font-size: x-large;
+.art__nos {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #fad100;
+    align-items: center;
 }
 
-h1 {
-    margin-top: 80px;
-    font-weight: bold;
-}
-
-
-.parrafoNosotros {
-    background: rgb(225, 225, 228);
+.div__n {
+    align-items: center;
+    width: 70%;
+    max-width: 150%;
+    margin: 5px auto;
+    color: white;
+    font-size: 150%;
     text-align: center;
-    font-weight: bold;
-    border: grey 5px double;
 }
 
-.parrafoNosotros .mainNosotros {
-    max-width: 100%;
-    margin-top: 10%;
-}
-
-.imgNosotros {
-    max-width: 400px;
+.img__n {
+    width: 70%;
+    max-width: 70%;
     height: auto;
-    width: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-.footerNosotros {
-    background-color: black;
-    color: aliceblue;
-
-    font-size: larger;
-    margin-top: 10%;
-    margin-bottom: 0%;
-    text-align: center;
-    font-family: monospace;
-
+.nos1 {
+    grid-area: nos1;
 }
+
+.nos2 {
+    grid-area: nos2;
+}
+
+.section__nosotros {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "banner""nav""titulo""nos1""nos2""bannerfooter""footer";
+}
+
+
 
 /* Pseudoclases */
 
 a:link {
-    color: blue;
+    color: rgb(255, 238, 0);
 }
 
 a:visited {
@@ -182,6 +250,52 @@ a:active {
 
 a:hover {
     background: blue
+}
+
+/* mapas */
+
+$redes: (instagram: red,
+    facebook: blue,
+    whatsapp: green,
+);
+
+@each $red,
+$color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }
+}
+
+;
+
+/* extends */
+
+.redSocial {
+    border: 1px solid whitesmoke;
+    background-color: gold;
+}
+
+.redsocial--social {
+    @extend .redSocial;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.redsocial--nueva {
+    @extend .redSocial;
+    color: grey;
+}
+
+/*mixins */
+
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.my_mixin {
+    @include sizes (500px, 50px);
+    background-color: lightsalmon;
 }
 
 @media screen and (max-width:700px) {
@@ -216,4 +330,5 @@ a:hover {
         font-size: xx-small;
 
     }
+
 }
