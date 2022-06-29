@@ -1,5 +1,3 @@
-
-
 .icono {
     border-radius: 50%;
     margin-top: 10%;
@@ -8,4 +6,8 @@
     max-width: 60%;
     max-height: 60%;
 
+}
+
+.icono {
+    grid-area: icono;
 }
