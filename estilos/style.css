@@ -294,7 +294,7 @@ footer {
   letter-spacing: 5%; }
 
 .precios {
-  font-size: 200%; }
+  font-size: 100%; }
 
 .productos {
   grid-area: productos; }
@@ -420,8 +420,8 @@ form h3 {
 .img__r {
   max-width: 100%;
   height: auto;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 10%;
   padding-bottom: 5%; }
 
@@ -453,7 +453,7 @@ form h3 {
 .rec4 {
   grid-area: rec4; }
 
-.section__recetas {
+.section__horarios {
   display: grid;
   gap: 30px;
   grid-template-areas: "banner" "nav" "titulo" "video" "rec1" "rec2" "rec3" "rec4" "bannerfooter" "footer"; }
@@ -494,7 +494,7 @@ form h3 {
 
 /* Pseudoclases */
 a:link {
-  color: blue;
+  color: #7a7a7a;
 }
 
 a:visited {
@@ -506,7 +506,7 @@ a:active {
 }
 
 a:hover {
-  background: rgb(221, 221, 226);
+  text-overflow:clip ;
 }
 
 
