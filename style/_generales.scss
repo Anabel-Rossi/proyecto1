@@ -9,13 +9,13 @@
 
 body {
 
-    background-color: $color__fondo;
+    background-color:$color;
     font-family: "Bebas Neue" !important;
     text-transform: uppercase;
 }
 
 header {
-    background-color: $color__fondo;
+    background-color: $color;
     display: grid;
     max-width: 90%;
     margin: 0 auto;
