@@ -261,47 +261,97 @@ footer {
 }
 
 /* seccion actividades */
-.productos {
-  display: flex;
-  flex-direction: column;
+
+
+.galeria{
+  font-family: 'open sans';
 }
 
-.cont__prod {
-  color: white;
-  justify-items: center;
-  width: 70%;
-  margin: 5% auto;
-  border: 5px solid #fad100;
-  padding-top: 5%;
-  font-size: 140%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 10px 5px 25px #868653;
+.galeria h1{
+  text-align: center;
+  margin:20px 0 15px 0;
+  font-weight: 300;
 }
 
-.img__prod {
+.linea{
+  border-top: 5px solid white;
+  margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+  display:flex;
   width: 85%;
-  height: auto;
-  padding-bottom: 5%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius:3px;
 }
 
-.name__prod {
-  font-size: 70%;
-  letter-spacing: 5%;
+.contenedor-imagenes .imagen{
+  width: 32%;
+  position: relative;
+  height:250px;
+  margin-bottom:5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
 }
 
-
-
-.productos {
-  grid-area: productos;
+.texto{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background:rgba(209, 211, 212, 0.781) ;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: .5s ease;
 }
 
-.section__productos {
-  display: grid;
-  gap: 30px;
-  grid-template-areas: "banner""nav""titulo""productos""bannerfooter""footer";
+.texto h2{
+  color: rgb(218, 74, 74);
+  font-weight: 300;
+  font-size:30px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.imagen:hover .texto{
+  height:100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+  .contenedor-imagenes{
+      width: 95%;
+  }
+}
+
+@media screen and (max-width:700px){
+  .contenedor-imagenes{
+      width: 90%;
+  }
+  .contenedor-imagenes .imagen{
+      width: 48%;
+  }
+}
+
+@media screen and (max-width:450px){
+  h1{
+      font-size:22px;
+  }
+  .contenedor-imagenes{
+      width: 98%;
+  }
+  .contenedor-imagenes .imagen{
+      width: 80%;
+  }
 }
 
 /* seccion contactos*/
@@ -361,21 +411,83 @@ form h3 {
 }
 
 /* seccion horarios*/
+.clases{
+  background-color: #E8E8E8;
+
+}
 
 
+table{
+  
+  width: 100%;
+  
+  text-align: center;
+  margin-top: 50px;
+  
+}
+.blanco {
+  background-color: white;
+}
+.gris{
+  background-color: #E8E8E8;
+}
+.negro{
+  background-color: rgb(48, 46, 46);
+  color: black;
+  text-align: 
+  center;
+  font-size: 150%;
+}
+th{
+  font-size: 170%;
+  padding: 20px 0;
+  font-style: italic;
+  color: #414040;
+}
+.horario{
+  font-style: italic;
+}
+h3{
+  text-align: center;
+  font-size: 60px;}
 
+.clases__mobile{
+  display: none;
+}
+
+@media (max-width: 800px){
+  .clases__mobile{
+    display: block;
+    text-align: center
+  }
+  table{
+    display: none;
+  }
+  p{
+    color: #414040;
+  }
+  .dia{
+    font-size: 170%;
+    color: white;
+  }
+  .horario{
+    color: rgb(179, 12, 12);
+    text-shadow: 1px 2px 3px rgb(243, 230, 230);
+  }
+
+};
 
 /* seccion nosotros */
 .art__nos {
   display: flex;
   flex-direction: column;
-  border: 5px solid #fad100;
+  
   align-items: center;
 }
 
 .div__n {
   align-items: center;
-  width: 70%;
+  width: 100%;
   max-width: 150%;
   margin: 5px auto;
   color: white;
@@ -399,11 +511,13 @@ form h3 {
   grid-area: nos2;
 }
 
+
+
 .section__nosotros {
   display: grid;
   gap: 30px;
-  grid-template-areas: "banner""nav""titulo""nos1""nos2""bannerfooter""footer";
-}
+  grid-template-areas: "banner""nav""titulo""nos1""nos2""bannerfooter""footer";} 
+
 
 /* Pseudoclases */
 a:link {
